@@ -1,0 +1,64 @@
+.container {
+  margin-top: 0rem;
+}
+.calculator {
+  background: black;
+  height: 100vh;
+  width: 100vw;
+}
+input {
+  height: 35vh;
+  background: black;
+  color:white;
+  border: none;
+  font-size: 5rem;
+}
+.keyboard {
+  height: 65vh;
+  width:100vw;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+}
+button{
+  border-radius: 50%;
+  border: none;
+  width: 75px;
+  height: 75px;
+  margin:auto;
+  font-size: 18px;
+  color:white;
+}
+#zero{
+  grid-column: 1 / span 2;
+  width:100%;
+  border-radius: 50px;
+}
+@media screen and (max-width:770px){
+  button {
+    width: 110px;
+    height: 110px;
+  }
+  #zero {
+    width:80%;
+  }
+  input {
+    padding: 10rem 5rem 1rem 2rem;
+  }
+}
+@media screen and (max-width:420px){
+  button {
+    width: 70px;
+    height: 70px;
+  }
+  input {
+    padding: 10rem 2rem 1rem 2rem;
+  }
+}
+@media screen and (max-width:370px){
+  button {
+    width:60px;
+    height: 60px;
+  }
+}

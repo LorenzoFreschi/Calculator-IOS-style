@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+*{
+  margin:0rem;
+  padding:0rem;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.container {
+  max-width: 770px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top:4rem;
+}
+.calculator {
+  width: 250px;
+  height: 400px;
+  background: black;
+  display:flex;
+  flex-direction: column;
+  grid-gap: 0.2rem;
+}
+input {
+  background: black;
+  color:white;
+  border: none;
+  height: 30%;
+  text-align: right;
+  padding: 3rem 2rem 1rem 2rem;
+  font-size: 2rem;
+}
+.keyboard {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  height: 70%;
+}
+button{
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin:auto;
+  font-size: 13px;
+  font-weight: bold;
+  color:white;
+}
+button:focus {
+  border: 0px !important;
+  outline: 0px !important;
+}
+#zero{
+  grid-column: 1 / span 2;
+  width:100%;
+  border-radius: 50px;
+}
+#clear,#back,#percent{
+  background: #ccc;
+}
+#seven, #eight, #nine, #four, #five, #six, #one, #two, #three, #zero, #decimal {
+  background: #444;
+}
+
+#divide,#multiply,#subtract,#add,#equals {
+  background: orange;
+}
